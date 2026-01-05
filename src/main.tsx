@@ -1,6 +1,8 @@
 import { render } from "preact";
-import { App } from "./app.tsx";
+import { App } from "./app";
 
 import "./index.css";
 
-render(<App />, document.getElementById("app")!);
+const container = document.querySelector("#app") as Element;
+
+render(<App />, container);
