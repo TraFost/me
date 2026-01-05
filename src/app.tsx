@@ -1,10 +1,5 @@
-import { Button } from "~/components/ui/button";
+import { AppProvider } from "~/app-provider";
 
 export function App() {
-	return (
-		<>
-			<h1>Farm + Preact</h1>
-			<Button>Click me</Button>
-		</>
-	);
+	return <AppProvider />;
 }
