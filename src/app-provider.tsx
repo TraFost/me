@@ -25,7 +25,7 @@ function Routes() {
 
 function MainLayout({ children }: { children: preact.ComponentChildren }) {
 	return (
-		<main className="bg-background text-neutral-900 selection:bg-neutral-900 selection:text-background overflow-x-hidden antialiased">
+		<main className="text-neutral-900 selection:bg-neutral-900 selection:text-background overflow-x-hidden antialiased">
 			<Navbar />
 			{children}
 			<Footer />
