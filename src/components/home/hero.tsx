@@ -1,6 +1,14 @@
 import { ArrowDown } from "lucide-react";
 import { GrainGradient } from "@paper-design/shaders-react";
 
+import { FlipWords } from "~/components/ui/flip-words";
+
+const HERO_WORDS = [
+	"Full-Stack Engineer",
+	"Systems Engineer",
+	"Agentic Systems",
+];
+
 export function Hero() {
 	return (
 		<section
@@ -24,7 +32,7 @@ function GradientBackground() {
 				noise={0}
 				shape="corners"
 				offsetX={0}
-				offsetY={0}
+				offsetY={-0.1}
 				scale={1}
 				rotation={0}
 				speed={1}
@@ -58,14 +66,8 @@ function HeroDescription() {
 					</div>
 				</div>
 
-				<div className="md:col-span-8 text-right reveal-up delay-100 mt-12 md:mt-0 pointer-events-auto">
-					<h2 className="text-6xl md:text-8xl lg:text-9xl leading-[0.85] font-medium text-neutral-900 tracking-tighter">
-						Software Architect
-						<br />
-						<span className="text-neutral-300 block text-2xl md:text-4xl lg:text-5xl mt-4 tracking-tight font-normal">
-							Agentic Infrastructure
-						</span>
-					</h2>
+				<div className="md:col-span-8 text-center reveal-up delay-100 mt-12 md:mt-0 md:text-right pointer-events-auto">
+					<FlipWords words={HERO_WORDS} />
 				</div>
 			</div>
 		</div>
