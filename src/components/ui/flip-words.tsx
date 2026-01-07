@@ -86,6 +86,7 @@ export function FlipWords({
 								{letter}
 							</motion.span>
 						))}
+						<span className="inline-block md:hidden">&nbsp;</span>
 					</motion.span>
 				))}
 			</motion.div>
