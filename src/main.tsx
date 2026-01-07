@@ -1,8 +1,9 @@
-import { render } from "preact";
+import { createRoot } from "react-dom/client";
 import { App } from "./app";
 
 import "./index.css";
 
 const container = document.querySelector("#app") as Element;
+const root = createRoot(container);
 
-render(<App />, container);
+root.render(<App />);

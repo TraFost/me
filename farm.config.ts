@@ -1,12 +1,10 @@
 import { defineConfig } from "@farmfe/core";
-import preact from "@preact/preset-vite";
 import farmPostcssPlugin from "@farmfe/js-plugin-postcss";
 
 import path from "path";
 
 export default defineConfig({
-	plugins: [farmPostcssPlugin()],
-	vitePlugins: [preact()],
+	plugins: ["@farmfe/plugin-react", farmPostcssPlugin()],
 	server: {
 		port: 5173,
 	},
