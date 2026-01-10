@@ -1,4 +1,4 @@
-import { Link } from "wouter-preact";
+import { Link } from "wouter";
 
 import { ShinyText } from "~/components/ui/shiny-text";
 

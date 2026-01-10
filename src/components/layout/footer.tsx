@@ -8,7 +8,7 @@ export function Footer() {
 	return (
 		<footer
 			id="contact"
-			class="py-24 px-6 md:px-12 bg-neutral-900 text-white/90 border-t border-neutral-800 relative z-30"
+			className="py-24 px-6 md:px-12 bg-neutral-900 text-white/90 border-t border-neutral-800 relative z-30"
 		>
 			<div className="max-w-7xl mx-auto">
 				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-16">
