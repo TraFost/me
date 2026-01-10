@@ -2,6 +2,7 @@ import { ArrowDown } from "lucide-react";
 import { GrainGradient } from "@paper-design/shaders-react";
 
 import { FlipWords } from "~/components/ui/flip-words";
+import { ParallaxContainer } from "~/components/ui/parallax";
 
 const HERO_WORDS = [
 	"Full-Stack Engineer",
@@ -11,13 +12,15 @@ const HERO_WORDS = [
 
 export function Hero() {
 	return (
-		<section
-			id="hero"
-			className="flex flex-col justify-end w-full px-6 pb-12 md:px-12 md:pb-16 relative overflow-hidden border-b border-neutral-200 min-h-dvh"
-		>
-			<GradientBackground />
-			<HeroDescription />
-		</section>
+		<ParallaxContainer>
+			<div
+				id="hero"
+				className="flex flex-col justify-end w-full px-6 pb-12 md:px-12 md:pb-16 relative overflow-hidden border-b border-neutral-200 min-h-dvh"
+			>
+				<GradientBackground />
+				<HeroDescription />
+			</div>
+		</ParallaxContainer>
 	);
 }
 
