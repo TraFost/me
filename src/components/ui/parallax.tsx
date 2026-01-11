@@ -18,7 +18,7 @@ type Props = {
 
 export function ParallaxContainer({
 	children,
-	range = ["0vh", "-30vh"],
+	range = ["0vh", "-10vh"],
 	offset = ["start start", "end start"],
 	className = "",
 }: Props) {

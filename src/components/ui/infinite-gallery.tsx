@@ -199,7 +199,7 @@ function GalleryScene({
 	const normalizedImages = useMemo(
 		() =>
 			images.map((img) =>
-				typeof img === "string" ? { src: img, alt: "" } : img
+				typeof img === "string" ? { src: img, alt: "Project image" } : img
 			),
 		[images]
 	);
@@ -465,7 +465,7 @@ function FallbackGallery({ images }: { images: ImageItem[] }) {
 
 export function InfiniteGallery({
 	images,
-	className = "h-96 w-full",
+	className = "h-[60dvh] w-full overflow-hidden",
 	style,
 	fadeSettings = {
 		fadeIn: { start: 0.05, end: 0.25 },
